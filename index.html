@@ -29,8 +29,8 @@
     <nav>
       <ul class="nav-links">
         <a href="#" class="nav-link home-button">Home</a>
-        <a href="#" class="nav-link">TV Shows</a>
         <a href="#" class="nav-link">Movies</a>
+        <a href="#" class="nav-link">Tv Shows</a>
         <a href="#" class="nav-link">Anime</a>
       </ul>
     </nav>
@@ -55,7 +55,7 @@
           <img class="featured-img" src="img/banner.jpg" alt="Avengers: Endgame" >
           <div class="featured-content">
             <div class="featured-content-wrapper">
-              <div class="featured-title ">
+              <div class="featured-title">
                 Avengers: Endgame
               </div>
               <div class="featured-info">
@@ -157,7 +157,9 @@
   <!-- STREAM LIST ITEMS -->
   <section class="stream-list-container">
     <h1 class="stream-list-header">Latest Release</h1>
-    <div class="stream-list"> 
+    <i class="fas fa-chevron-left prev-arrow" id="latest-prev"></i>
+    <i class="fas fa-chevron-right next-arrow"id="latest-next"></i>
+    <div class="stream-list" id="latest-slider"> 
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/vincenzo.jpeg" alt="vincenzo">
         <h2 class="stream-list-item-title">Vincenzo</h2>
@@ -241,7 +243,9 @@
 
   <section class="stream-list-container">
     <h1 class="stream-list-header">Trending Now</h1>
-    <div class="stream-list">
+    <i class="fas fa-chevron-left prev-arrow" id="trending-prev"></i>
+    <i class="fas fa-chevron-right next-arrow" id="trending-next"></i>
+    <div class="stream-list" id="trending-slider">
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/minions.jpeg" alt="Minions">
         <h2 class="stream-list-item-title">Minions</h2>
@@ -338,7 +342,9 @@
 
   <section class="stream-list-container">
     <h1 class="stream-list-header">Top Korean Drama</h1>
-    <div class="stream-list">
+    <i class="fas fa-chevron-left prev-arrow" id="kdrama-prev"></i>
+    <i class="fas fa-chevron-right next-arrow" id="kdrama-next"></i>
+    <div class="stream-list" id="kdrama-slider">
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/vincenzo.jpeg" alt="Vincenzo">
         <h2 class="stream-list-item-title">Vincenzo</h2>
@@ -422,7 +428,9 @@
 
   <section class="stream-list-container">
     <h1 class="stream-list-header">Top Anime</h1>
-    <div class="stream-list">
+    <i class="fas fa-chevron-left prev-arrow" id="anime-prev"></i>
+    <i class="fas fa-chevron-right next-arrow" id="anime-next"></i>
+    <div class="stream-list" id="anime-slider">
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/attack-titan.jpeg" alt="Attack on Titan">
         <h2 class="stream-list-item-title">Attack on Titan</h2>
@@ -618,12 +626,16 @@
         <li><a href="#" class="footer-link">Service</a></li>
         <li><a href="#" class="footer-link">Contact Us</a></li>
       </ul>
+    </div>
+    <div class="footer-content">
       <ul class="footer-links">
         <h4>Support</h4>
         <li><a href="#" class="footer-link">Customer Support</a></li>
         <li><a href="#" class="footer-link">FAQ</a></li>
         <li><a href="#" class="footer-link">Ｈelp Center</a></li>
       </ul>
+    </div>
+    <div class="footer-content">
       <ul class="footer-links">
         <h4>Legal</h4>
         <li><a href="#" class="footer-link">Terms Of Use</a></li>
