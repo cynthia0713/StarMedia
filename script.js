@@ -61,8 +61,8 @@ $(document).ready(function(){
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2, 
+          slidesToShow: 3,
+          slidesToScroll: 1, 
           infinite: true,
           arrow: true
         }

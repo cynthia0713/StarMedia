@@ -338,10 +338,15 @@ nav{
 .prev-arrow, 
 .next-arrow{
   position: absolute;
-  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   top: 50%;
   line-height: 50px;
-  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 2rem;  
+  cursor: pointer;
   z-index: 1;
 }
 
@@ -774,7 +779,11 @@ nav{
 @media (max-width: 800px){
   .stream-list-item-img{
     width: 230px;
-    margin-left: -15px;
+    margin-right: 5px;
+  }
+
+  .next-arrow{
+    right: -10px;
   }
 
   .watch-now-btn{
@@ -804,6 +813,9 @@ nav{
     padding: 0.7em 0.7em;
     height: unset;
     margin-left: 10px;
+  }
+  .add-list-btn{
+    right: 5px;
   }
   .price-comparison{
     display: block;
