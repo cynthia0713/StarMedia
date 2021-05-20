@@ -772,6 +772,7 @@ RESPONSIVE
   .price-column{
     width: 50%;
     margin: 50px 25%;
+  }
 }
 
 @media (min-width: 800px) and (max-width:899px) {
@@ -992,6 +993,7 @@ RESPONSIVE
   .banner-cta-info{
     height: unset;
   }
+
   .footer-content{
     margin-right: 1rem;
   }
