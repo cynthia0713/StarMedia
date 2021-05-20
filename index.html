@@ -27,7 +27,7 @@
      <a href="#"><img src="img/logo.png" alt="StarMedia"></a> 
     </div>
     <nav>
-      <ul class="nav-links">
+      <ul class="nav-links dropdown">
         <a href="#" class="nav-link home-button">Home</a>
         <a href="#" class="nav-link">Movies</a>
         <a href="#" class="nav-link">Tv Shows</a>
@@ -36,8 +36,8 @@
       </ul>
     </nav>
     <div class="searchbar">
-      <input type="search" class="search-input" placeholder="TV Shows, Movies, Anime">
-      <button class="search-btn"><i class="fas fa-search fa-lg"></i></button>
+      <input type="search" class="search-input" placeholder="Movies, TV Shows, Anime">
+      <span class="search-btn"><i class="fas fa-search fa-lg"></i></span>
     </div>
     <div class="account">
       <a href="#" class="login">Sign In</a>
@@ -72,10 +72,10 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laborum ducimus dolorum fugiat voluptatum modi, autem rerum temporibus sequi vero, unde excepturi culpa deserunt alias quo distinctio doloremque debitis dolor.
               </div>
               <div class="button">
-                <button class="play-btn-watch"><i class="fas fa-play"></i>
+                <button class="banner-cta-watch"><i class="fas fa-play"></i>
                   Watch Now
                 </button>
-                <button class="play-btn-info"><i class="fas fa-info-circle fa-lg"></i>
+                <button class="banner-cta-info"><i class="fas fa-info-circle fa-lg"></i>
                   More Info
                 </button>
               </div>
@@ -98,7 +98,7 @@
                   4.7/5.0
                 </span> 
                 <span class="featured-detail">
-                  2014｜7 Seasons｜Comedy, Crime
+                  2014｜7 Seasons｜Drama, Action
                 </span>
               </div>
               <div class="featured-desc">
@@ -106,10 +106,10 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laborum ducimus dolorum fugiat voluptatum modi, autem rerum temporibus sequi vero, unde excepturi culpa deserunt alias quo distinctio doloremque debitis dolor.
               </div>
               <div class="button">
-                <button class="play-btn-watch"><i class="fas fa-play"></i>
+                <button class="banner-cta-watch"><i class="fas fa-play"></i>
                   Watch Now
                 </button>
-                <button class="play-btn-info"><i class="fas fa-info-circle fa-lg"></i>
+                <button class="banner-cta-info"><i class="fas fa-info-circle fa-lg"></i>
                   More Info
                 </button>
               </div>
@@ -132,7 +132,7 @@
                   4.7/5.0
                 </span> 
                 <span class="featured-detail">
-                  2013｜7 Seasons｜Sci-Fi, Action-Adventure
+                  2013｜7 Seasons｜Comedy
                 </span>
               </div>
               <div class="featured-desc">
@@ -140,10 +140,10 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laborum ducimus dolorum fugiat voluptatum modi, autem rerum temporibus sequi vero, unde excepturi culpa deserunt alias quo distinctio doloremque debitis dolor.
               </div>
               <div class="button">
-                <button class="play-btn-watch"><i class="fas fa-play"></i>
+                <button class="banner-cta-watch"><i class="fas fa-play"></i>
                   Watch Now
                 </button>
-                <button class="play-btn-info"><i class="fas fa-info-circle fa-lg"></i>
+                <button class="banner-cta-info"><i class="fas fa-info-circle fa-lg"></i>
                   More Info
                 </button>
               </div>
@@ -155,7 +155,7 @@
     </div>
   </section>
 
-  <!-- Latest Release List -->
+  <!-- Latest Release Section -->
   <section class="stream-list-container">
     <h1 class="stream-list-header">Latest Release</h1>
     <i class="fas fa-chevron-left prev-arrow" id="latest-prev"></i>
@@ -163,7 +163,7 @@
     <div class="stream-list" id="latest-slider"> 
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/vincenzo.jpeg" alt="vincenzo">
-        <h2 class="stream-list-item-title">Vincenzo<i class="far fa-heart filled" data-tooltip="Add to Favorite"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Vincenzo</a><i class="far fa-heart filled" data-tooltip="Add to Favorite"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2021｜20 episodes</span> 
@@ -173,7 +173,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/law-school.jpeg" alt="Law-School">
-        <h2 class="stream-list-item-title">Law School<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Law School</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2021｜16 episodes</span> 
@@ -183,7 +183,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/despicable.jpeg" alt="Despicable Me">
-        <h2 class="stream-list-item-title">Despicable Me 3<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Despicable Me 3</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2017｜1h 36m</span> 
@@ -193,7 +193,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/civilwar.jpeg" alt="Civilwar">
-        <h2 class="stream-list-item-title">Captain America: Civil War<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Captain America: Civil War</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2016｜2h 28m</span> 
@@ -203,7 +203,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/blackpanther.jpeg" alt="blackpanther">
-        <h2 class="stream-list-item-title">Black Panther<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Black Panther</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2018｜2h 15m</span> 
@@ -213,7 +213,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/flower-evil.jpeg" alt="Flower of Evil">
-        <h2 class="stream-list-item-title">Flower of Evil<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Flower of Evil</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2021｜16 episodes</span> 
@@ -224,7 +224,7 @@
     </div>
   </section>
 
-  <!-- Trending Now List -->
+  <!-- Trending Now Section -->
   <section class="stream-list-container">
     <h1 class="stream-list-header">Trending Now</h1>
     <i class="fas fa-chevron-left prev-arrow" id="trending-prev"></i>
@@ -232,7 +232,7 @@
     <div class="stream-list" id="trending-slider">
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/minions.jpeg" alt="Minions">
-        <h2 class="stream-list-item-title">Minion<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Minion</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2015｜1h 31m</span> 
@@ -242,7 +242,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/demon-slayer.jpeg" alt="Demon Slayer">
-        <h2 class="stream-list-item-title">Demon Slayer: Kimetsu no Yaiba<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Demon Slayer: Kimetsu no Yaiba</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2019｜26 episodes</span> 
@@ -252,7 +252,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/spiderman.jpeg" alt="Spiderman: Homecoming">
-        <h2 class="stream-list-item-title">Spiderman: Homecoming<i class="far fa-heart"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Spiderman: Homecoming</a><i class="far fa-heart"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2017｜2h 13m</span> 
@@ -262,7 +262,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/parasite.jpeg" alt="parasite">
-        <h2 class="stream-list-item-title">Parasite<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Parasite</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2019｜2h 12m</span> 
@@ -272,7 +272,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/guardian.jpeg" alt="Guardian: The Lonely and Great God">
-        <h2 class="stream-list-item-title">Guardian: The Lonely and Great God<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Guardian: The Lonely and Great God</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2016｜16 episodes</span> 
@@ -282,7 +282,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/flower-evil.jpeg" alt="Flower of Evil">
-        <h2 class="stream-list-item-title">Flower of Evil<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Flower of Evil</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2020｜16 episodes</span> 
@@ -292,7 +292,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/haunted-house.jpg" alt="Sell Your Haunted House">
-        <h2 class="stream-list-item-title">Sell Your Haunted House<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Sell Your Haunted House</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2021｜16 episodes</span> 
@@ -303,7 +303,7 @@
     </div>
   </section>
 
-  <!-- Top K-Drama List -->
+  <!-- Top K-Drama Section -->
   <section class="stream-list-container">
     <h1 class="stream-list-header">Top Korean Drama</h1>
     <i class="fas fa-chevron-left prev-arrow" id="kdrama-prev"></i>
@@ -311,7 +311,7 @@
     <div class="stream-list" id="kdrama-slider">
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/vincenzo.jpeg" alt="Vincenzo">
-        <h2 class="stream-list-item-title">Vincenzo<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Vincenzo</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2021｜20 episodes</span> 
@@ -321,7 +321,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/hospital-playlist.jpeg" alt="Hospital Playlist">
-        <h2 class="stream-list-item-title">Hospital Playlist<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Hospital Playlist</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2020｜12 episodes</span> 
@@ -331,7 +331,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/crash-landing.jpeg" alt="Crash Landing on You">
-        <h2 class="stream-list-item-title">Crash Landing on You<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Crash Landing on You</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2019｜16 episodes</span> 
@@ -341,7 +341,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/mouse.jpeg" alt="Mouse">
-        <h2 class="stream-list-item-title">Mouse<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Mouse</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2021｜20 episodes</span> 
@@ -351,7 +351,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/its-ok.jpeg" alt="It's Okay to Not Be Okay">
-        <h2 class="stream-list-item-title">It's Okay to Not Be Okay<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">It's Okay to Not Be Okay</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2020｜16 episodes</span> 
@@ -361,7 +361,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/flower-evil.jpeg" alt="Flower of Evil">
-        <h2 class="stream-list-item-title">Flower of Evil<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Flower of Evil</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2020｜16 episodes</span> 
@@ -372,7 +372,7 @@
     </div>
   </section>
 
-  <!-- Top Anime List -->
+  <!-- Top Anime Section -->
   <section class="stream-list-container">
     <h1 class="stream-list-header">Top Anime</h1>
     <i class="fas fa-chevron-left prev-arrow" id="anime-prev"></i>
@@ -380,7 +380,7 @@
     <div class="stream-list" id="anime-slider">
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/attack-titan.jpeg" alt="Attack on Titan">
-        <h2 class="stream-list-item-title">Attack on Titan<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Attack on Titan</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2013｜75 episodes</span> 
@@ -390,7 +390,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/demon-slayer.jpeg" alt="Demon Slayer">
-        <h2 class="stream-list-item-title">Demon Slayer: Kimetsu no Yaiba<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Demon Slayer: Kimetsu no Yaiba</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2019｜26 episodes</span> 
@@ -400,7 +400,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/dna.jpeg" alt="Diamond no Ace">
-        <h2 class="stream-list-item-title">Ａce of Diamond<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Ａce of Diamond</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2013｜178 episodes</span> 
@@ -410,7 +410,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/conan.jpeg" alt="Detective Conan">
-        <h2 class="stream-list-item-title">Detective Conan<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Detective Conan</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>1996｜988 episodes</span> 
@@ -420,7 +420,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/haikyuu.jpeg" alt="Haikyuu">
-        <h2 class="stream-list-item-title">Haikyuu!!<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Haikyuu!!</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2014｜88 episodes</span> 
@@ -430,7 +430,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/hero-academia.png" alt="My Hero Academia">
-        <h2 class="stream-list-item-title">My Hero Academia<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">My Hero Academia</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2016｜113 episodes</span> 
@@ -440,7 +440,7 @@
       </div>
       <div class="stream-list-item">
         <img class="stream-list-item-img" src="img/naruto.jpeg" alt="Naruto Shippuden">
-        <h2 class="stream-list-item-title">Naruto Shippuden<i class="far fa-heart filled"></i></h2>
+        <h2 class="stream-list-item-title"><a href="#">Naruto Shippuden</a><i class="far fa-heart filled"></i></h2>
         <div class="stream-list-item-rating">
           <span class="rating"><i class="fas fa-star"></i>4.7/5.0</span>
           <span>2007｜500 episodes</span> 
