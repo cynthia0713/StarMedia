@@ -13,18 +13,18 @@ body{
   margin: 0;
   background-image: linear-gradient(to bottom,rgb(81, 80, 83), rgb(1, 1, 1));
   height: 100vh;
+  overflow: hidden;
 }
 
 header{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .logo-container img{
   margin: 10px;
-  width: 10rem;
+  width: 12rem;
 }
 
 .login{
@@ -32,8 +32,8 @@ header{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  background: white;
+  max-width: 100%;
+  background: #fafafa;
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 0 0.8rem rgb(29, 28, 28);
@@ -52,21 +52,26 @@ form .input-field{
   border: 2px solid silver;
   border-radius: 20px;
   padding: 10px;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 .input-field input{
   width: 100%;
-  margin: 0 10px;
+  margin: 0 0.65rem;
   font-size: 0.8rem;
   outline: none;
   border: none;
+  background-color: transparent;
+}
+
+.remember input[type="checkbox"]{
+  margin-right: 10px;
 }
 
 .forgot-pw{
-  width: 100%;
+  max-width: 100%;
   font-size: 0.8rem;
-  margin: 20px 20px 50px;
+  margin: -1.1rem 1.25rem 3rem;
   margin-left: 18rem;
   color: #a6a6a6;
   cursor: pointer;
@@ -95,16 +100,34 @@ input[type="submit"]:hover{
   transition: 0.3s;
 }
 
-.signup{
+.signup-link{
   margin: 20px 0;
   text-align: center;
 }
 
-.signup a{
+.signup-link a{
   text-decoration:none;
   color: var(--main-color);
 }
 
-.signup a:hover{
+.signup-link a:hover{
   text-decoration: underline;
+}
+
+@media (min-width:400px) and (max-width:1024px){
+  .forgot-pw{
+    width: 100%;
+    margin: -1rem 0 5rem 13rem;
+  }
+}
+
+@media (min-width:300px) and (max-width:399px){
+  .remember{
+    font-size: 0.8rem;
+  }
+  .forgot-pw{
+    width: 100%;
+    font-size: 0.8rem;
+    margin: -1rem 0 2.5rem 8rem;
+  }
 }

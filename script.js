@@ -77,7 +77,7 @@ $(document).ready(function(){
           arrow: true
         }
       },
-      /* {
+       {
         breakpoint: 700,
         settings: {
           slidesToShow: 2,
@@ -86,7 +86,7 @@ $(document).ready(function(){
           arrow: true
         }
       },
-      {
+      /*{
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
@@ -94,8 +94,8 @@ $(document).ready(function(){
           infinite: true,
           arrow: true
         }
-      }, */
-/*       {
+      }, 
+      {
         breakpoint: 560,
         settings: {
           slidesToShow: 1,
