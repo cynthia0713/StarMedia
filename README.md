@@ -6,4 +6,4 @@ A simple online streaming website homepage created with HTML/CSS and Javascript
 ### Introduction
 
 
-### <a href="https://cynthia0713.github.io/StarMedia/"> LIVE DEMO </a>
+### <a href="https://agitated-jackson-fd0907.netlify.app/"> LIVE DEMO </a>
