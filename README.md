@@ -3,7 +3,4 @@
 
 A simple online streaming website homepage created with HTML/CSS and Javascript
 
-### Introduction
-
-
 ### <a href="https://agitated-jackson-fd0907.netlify.app/"> LIVE DEMO </a>
