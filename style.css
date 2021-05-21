@@ -45,7 +45,6 @@ button {
 }
 
 .logo-container img{
-  /* width: 10.5vw; */
   width: 10rem;
   align-items: center;
   margin-top: 5px;
@@ -520,7 +519,7 @@ PRICE COMPARISON SECTION
   width: 100%;
   border-radius: 5px;
   box-shadow: 0 8px 30px rgba(212, 209, 209, 0.3);
-  transition: transform 0.3s ease-in;
+  transition: transform 0.4s ease-in;
 }
 
 .price-column:hover{
@@ -584,10 +583,12 @@ PRICE COMPARISON SECTION
 
 .fa-check{
   margin: 5px;
+  color: #a1e2a1;
 }
 
 .fa-times{
   margin: 5px;
+  color: #e49090;
 }
 
 .plan-cta{
@@ -599,7 +600,7 @@ PRICE COMPARISON SECTION
   border-radius: 10px;
   background-color: #fafafa;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .plan-cta:hover{
@@ -627,6 +628,7 @@ FOOTER SECTION
   width: 10rem;
   position: absolute;
   left: 20px;
+  top:10px;
 }
 
 .footer-divider{
