@@ -33,7 +33,7 @@ button {
   padding: 0.2em 0.5em;
 }
 
-.home-button {
+.browse-button {
   display: none;
 }
 
@@ -60,7 +60,7 @@ nav{
 .nav-links{
   list-style: none;
   justify-content: flex-start;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .nav-link{ 
@@ -583,11 +583,11 @@ PRICE COMPARISON SECTION
 }
 
 .fa-check{
-  margin: 0.8rem 0.8rem;
+  margin: 5px;
 }
 
 .fa-times{
-  margin: 0.8rem 0.8rem;
+  margin: 5px;
 }
 
 .plan-cta{
@@ -715,6 +715,7 @@ RESPONSIVE
   .signup{
     margin-right: 10px;
   }
+
   .featured-info{
     font-size: 0.7em;
     margin-left: -10px;
@@ -731,9 +732,12 @@ RESPONSIVE
 }
 
 
-@media (min-width: 900px) and (max-width:999px){
+@media (min-width: 900px) and (max-width:1000px){
+  .logo-container img{
+    width: 130px;
+  }
   .nav-links{
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 
   .featured-content-wrapper{
@@ -776,22 +780,25 @@ RESPONSIVE
 }
 
 @media (min-width: 800px) and (max-width:899px) {
-  .stream-list-item-img{
-    width: 230px;
-    margin-right: 5px;
+  .logo-container img{
+    width: 100px;
+  }
+  
+  .nav-links, .signup, .login{
+    font-size: 0.7rem;
+    margin: 0.3rem;
   }
 
   .next-arrow{
-    right: -10px;
+    right: 0;
+  }
+
+  .stream-list-item-img{
+    width: 230px;
   }
 
   .stream-list-item-title{
-    left: 15px;
-  }
-
-  .stream-list-item-rating, 
-  .stream-list-item-cast{
-    left: 10px;
+    width: 75%;
   }
 
   .featured-desc{
@@ -801,6 +808,10 @@ RESPONSIVE
   .featured-info{
     font-size: 0.7em;
     margin-left: -10px;
+  }
+
+  .signup, .login{
+    font-size: 0.75rem;
   }
 
   .banner-cta-info, 
@@ -825,7 +836,94 @@ RESPONSIVE
   }
 }
 
-@media (max-width:750px){
+@media (min-width:760px) and (max-width: 799px){
+  .logo-container img{
+    width: 100px;
+  }
+
+  .nav-links, .signup, .login{
+    font-size: 0.7rem;
+    margin: 0.3rem;
+  }
+
+  .featured-desc{
+    font-size: 0.6em;
+    line-height: 1.7em;
+  }
+
+  .banner-cta-watch, 
+  .banner-cta-info{
+    font-size: 0.6rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 10px;
+    height: unset;
+  }
+
+  .price-comparison{
+    display: block;
+  }
+
+  .price-column{
+    display: block;
+    width: 50%;
+    margin: 50px 25%;
+  }
+
+  .footer-content{
+    margin-left: 2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width:700px) and (max-width: 759px){
+  .logo-container img{
+    width: 100px;
+  }
+
+  .nav-links, .signup, .login{
+    font-size: 0.7rem;
+  }
+  .signup, .login{
+    margin: 0.2rem;
+  }
+
+  .featured-desc{
+    font-size: 0.6em;
+    line-height: 1.7em;
+  }
+
+  .banner-cta-watch, 
+  .banner-cta-info{
+    font-size: 0.6rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 10px;
+    height: unset;
+  }
+
+  .stream-list-item-img{
+    width: 250px;
+    height: 350px;
+  }
+  .stream-list-item-title, .stream-list-item-cast{
+    width: 70%;
+  }
+  
+  .price-comparison{
+    display: block;
+  }
+
+  .price-column{
+    display: block;
+    width: 50%;
+    margin: 50px 25%;
+  }
+
+  .footer-content{
+    margin-left: 2rem;
+    font-size: 0.8rem;
+  }
+}
+/* @media (max-width:750px){
   .nav-links{
     font-size: 0.5rem;
   }
@@ -871,14 +969,10 @@ RESPONSIVE
     margin-left: 10px;
   }
 
-/*   .watch-now-btn{
-    left: 5%;
-  } */
-
   .footer-content{
     margin-left: 2rem;
   }
-}
+}*/
 
 @media (max-width: 600px){
   .stream-list-item-img{
@@ -910,10 +1004,6 @@ RESPONSIVE
     left: 5%;
   }
   .stream-list-item-cast{
-    left: 5%;
-  }
-
-  .watch-now-btn{
     left: 5%;
   }
 

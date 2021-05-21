@@ -77,7 +77,7 @@ $(document).ready(function(){
           arrow: true
         }
       },
-      {
+      /* {
         breakpoint: 700,
         settings: {
           slidesToShow: 2,
@@ -94,7 +94,7 @@ $(document).ready(function(){
           infinite: true,
           arrow: true
         }
-      },
+      }, */
 /*       {
         breakpoint: 560,
         settings: {
@@ -180,7 +180,7 @@ $(document).ready(function(){
           arrow: true
         }
       },
-      {
+      /* {
         breakpoint: 700,
         settings: {
           slidesToShow: 2,
@@ -197,7 +197,7 @@ $(document).ready(function(){
           infinite: true,
           arrow: true
         }
-      },
+      }, */
 /*       {
         breakpoint: 560,
         settings: {
@@ -429,5 +429,10 @@ $(document).on('click', '.filled',function(){
   $(this).toggleClass('fill-heart')
 })
 
+/* $('.search-input').focus(function() {
+  $(this).attr('placeholder', 'Movies, Tv Shows, Anime')
+}).blur(function() {
+  $(this).attr('placeholder', 'Search')
+}) */
 
 /* window.onbeforeunload = function () { window.scrollTo(0,0); }; */
