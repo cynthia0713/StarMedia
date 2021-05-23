@@ -224,8 +224,25 @@ $('.fa-search').click(function(){
 });
 
 //Collapse searchbar when clicked away
-$(document).click(function(e){
-  if(!$(e.target).parent('.searchbar').length){
+$(document).click(function(event){
+  if(!$(event.target).parent('.searchbar').length){
     $('.searchbar').find('.search-input').removeClass('toggle');
   }
 });
+
+
+//Toggle between password visibility
+$(function(){
+  $('.togglePassword').click(function(){
+    $(this).toggleClass('fa-eye-slash');
+    var x = $('#password').attr('type'); 
+    if(x == 'password'){
+      $('.password').attr('type', 'text')
+    }else{
+      $('.password').attr('type', 'password')
+    }
+  });
+});
+
+
+
