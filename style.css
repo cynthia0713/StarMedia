@@ -1,7 +1,7 @@
 :root{
   --main-color: #0096ff;
 }
-
+/*-----------------GENERAL---------------------*/
 *{
   box-sizing: border-box;
   margin: 0;
@@ -33,12 +33,11 @@ button {
   padding: 0.2em 0.5em;
 }
 
-.browse-button {
-  display: none;
-}
+/*-----------------NAVBAR---------------------*/
 
 .logo-container, 
 .nav-links, 
+.browse-btn, 
 .searchbar, 
 .account{
   display: flex;
@@ -49,6 +48,7 @@ button {
   align-items: center;
   margin-top: 5px;
   margin-left: 10px;
+  z-index: 0;
 }
 
 nav{
@@ -59,7 +59,8 @@ nav{
 .nav-links{
   list-style: none;
   justify-content: flex-start;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  /* display: none; */
 }
 
 .nav-link{ 
@@ -70,46 +71,93 @@ nav{
   text-transform: uppercase;
 }
 
+/*---- DROP DOWN MENU ----*/
+.dropdown{
+  position: absolute;
+  top: 20%;
+  justify-content: flex-start;
+  display: none;
+}
+
+.dropdown-links{
+  position: relative;
+  padding: 0 30px;
+  background-color:rgb(0,0,0, 0.9);
+  box-shadow: 0 0 0.5rem rgb(71, 70, 70);
+  top: 120%;
+  left: -20%;
+  display: none;
+}
+
+.dropdown-link{
+  text-decoration: none;
+  color: white;
+  margin: 0.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-right: 10px;
+  padding: 10px 30px;
+  display: block;
+}
+
+.dropdown-link:hover{
+  text-decoration: 2px underline var(--main-color);
+  text-underline-position: under;
+}
+
+.browse-btn{
+  text-decoration: none;
+  color: white;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.dropdown:hover .dropdown-links{
+  display: block;
+}
+
+.fa-caret-down{
+  margin-left: 5px;
+} 
+
+/*------ SEARCH BAR ------*/
 .searchbar{
   position: relative;
-  align-items: center;
-  background: transparent;
+  left: 2%;
+  margin-right: 10px;
+  overflow: hidden;
 }
 
 .search-input{
-  height: 2.2rem;
-  width: 15rem;
-  border: 1px solid #fafafa;
+  height: 2.1rem;
+  width: 0;
   background-color: transparent;
-  color: #fafafa;
+  border: 1px solid transparent;
   border-radius: 15px;
-  outline: none;
-  padding: 0px 40px;
-  font-size: 0.75rem;
-  /* transition: all 0.3s ease-in-out; */
-}
-
-.search-input:focus{
- opacity: 0.9;
- border-color: var(--main-color);
-}
-
-.search-btn{
-  position: absolute;
-  cursor: pointer;
-  border: transparent;
-  background: transparent;
-  outline: none;
-}
-
-.search-btn .fa-search{
+  padding-left: 40px;
+  padding-right: 10px;
   color: #fafafa;
-  padding: 10px;
-  font-size: 1.2rem;
+  outline:none;
+  transition: 0.3s ease-out;
+  visibility: hidden;
 }
 
-.search-btn:hover .fa-search{
-  opacity: 0.9;
+.toggle{
+  width: 200px;
+  border-color: var(--main-color);
+  visibility: visible;
+}
+
+.fa-search{
+  position: absolute;
+  top: 25%;
+  left: 10px;
+  color: #fafafa;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .account{
@@ -120,7 +168,7 @@ nav{
   margin-left: 0 20px;
   padding: 3px;
   font-weight: 500;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
 }
 
@@ -129,7 +177,7 @@ nav{
   color: #fafafa;
   margin-right: 20px;
   background-image: linear-gradient(220deg, rgba(65,226,210,255),rgba(97,158,225,255));
-  padding: 8px;
+  padding: 6px;
   border-radius: 8px;
 }
 
@@ -149,6 +197,7 @@ nav{
   text-underline-position: under;
 }
 
+/*-----------------FEATURED BANNER---------------------*/
 .container{
   margin: auto;
   background-color: black;
@@ -243,7 +292,7 @@ nav{
   position: relative;
   align-items: center;
   margin: 0 0 1.5rem;
-  font-size: 0.85vw;
+  font-size: 1.1vw;
   /* transform: translateX(-50px); */
 }
 
@@ -272,7 +321,9 @@ nav{
   max-width: 80%;
 }
 
-.button{
+/*-----Banner Buttons-----*/
+
+.button-cta{
   display: flex;
 }
 
@@ -317,11 +368,15 @@ nav{
   margin-right: 10px;
 }
 
+
+/*----------------- STREAMING LIST SECTION ---------------------*/
 .stream-list-container{
-  /* max-width: 1920px; */
+  position: relative;
   padding: 20px;
   margin: auto;
+  color: #fafafa;
   background-image: radial-gradient(circle, #2c2a2a, #010101);
+  overflow: hidden; 
 }
 
 .stream-list-header{
@@ -336,14 +391,7 @@ nav{
   height: 50px;
 }
 
-.stream-list{
-  display: flex;
-  align-items: center;
-  margin: 0 10px 0 15px;
-  width: 95vw;
-  
-  position: relative;
-}
+/*-----Prev/Next Arrow----*/
 
 .prev-arrow, 
 .next-arrow{
@@ -365,7 +413,7 @@ nav{
 }
 
 .next-arrow{
-  right: 20px;
+  right: 10px;
 }
 
 .prev-arrow:hover, 
@@ -373,15 +421,16 @@ nav{
   color: var(--main-color);
 }
 
-/********
- STREAMING LIST SECTION 
- ********/
+/*----Streaming List Slider----*/
 
-.stream-list-container{
-  color: #fafafa;
+.stream-list{
+  display: flex;
+  align-items: center;
+  margin: 0 10px 0 15px;
+  width: 95vw;
   position: relative;
-  overflow: hidden; 
 }
+
 
 .stream-list-item:hover .stream-list-item-img{
   transform: translateY(-10px);
@@ -400,6 +449,8 @@ nav{
   margin: 10px;
   color: #fafafa;
 }
+
+/*----Stream List Item Content----*/
 
 .stream-list-item-img{
   position: relative;
@@ -422,21 +473,6 @@ nav{
 .stream-list-item-title a{
   text-decoration: none;
   color: #fafafa;
-}
-
-.fa-heart{
-  margin-left: 10px;
-  position: absolute;
-  cursor: pointer;
-}
-
-.fa-heart:hover{
-  color: var(--main-color);
-}
-
-.fill-heart{
-  font-weight: 700;
-  color: var(--main-color);
 }
 
 .stream-list-item-rating{
@@ -469,6 +505,23 @@ nav{
   color: #fafafa;
 }
 
+.fa-heart{
+  margin-left: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.fa-heart:hover{
+  color: var(--main-color);
+}
+
+.fill-heart{
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+/*-----Stream List Buttons-----*/
+
 .watch-now-btn{
   position: absolute;
   border: none;
@@ -489,6 +542,8 @@ nav{
   color: #fafafa;
 }
 
+/*----------------- PRICE COMPARISON SECTION ---------------------*/
+
 .section-title{
   margin: 2rem;
   color: #fafafa;
@@ -500,9 +555,7 @@ nav{
   padding: 0 20px;
 }
 
-/********
-PRICE COMPARISON SECTION 
-*********/
+/*----Price Plans----*/
 
 .price-comparison{
   display: flex;
@@ -531,6 +584,8 @@ PRICE COMPARISON SECTION
   padding-top: 1.8rem;
   border-top: 5px solid var(--main-color);
 }
+
+/*----Plan Header----*/
 
 .price-header{
   display: flex;
@@ -571,6 +626,8 @@ PRICE COMPARISON SECTION
   margin-bottom: 1.5rem;
 }
 
+/*----Plan Features----*/
+
 .price-feature-wrapper{
   display: flex;
   justify-content: center;
@@ -581,6 +638,8 @@ PRICE COMPARISON SECTION
   padding: 0;
 }
 
+/*----Plan Features Icons----*/
+
 .fa-check{
   margin: 5px;
   color: #a1e2a1;
@@ -590,6 +649,8 @@ PRICE COMPARISON SECTION
   margin: 5px;
   color: #e49090;
 }
+
+/*----Plan Feature Buttons----*/
 
 .plan-cta{
   margin-top: 1.5rem;
@@ -612,9 +673,7 @@ PRICE COMPARISON SECTION
   color: #fafafa;
 }
 
-/********
-FOOTER SECTION
-*********/
+/*------------------ FOOTER SECTION ----------------------*/
 
 .footer{
   display: flex;
@@ -682,7 +741,7 @@ FOOTER SECTION
   color: #fafafa;
 }
 
-/* Social Media Links */
+/*----------------- SOCIAL MEDIA LINKS ---------------------*/
 
 .social-media a{
   margin: 5px;
@@ -709,9 +768,7 @@ FOOTER SECTION
   color: #cd201f;
 }
 
-/********
-RESPONSIVE 
-*********/
+/*------------- MEDIA QUERY FOR RESPONSIVENESS ----------------*/
 
 @media (min-width: 1100px) and (max-width: 1300px){
   .signup{
@@ -730,7 +787,18 @@ RESPONSIVE
   .stream-list-item-title{
     width: 70%;
   }
-
+/*   .browse-btn{
+    display: inline;
+  }
+  .nav-link{
+    position: absolute;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .nav-link:hover{
+    opacity: 1;
+    transition: all 1s;
+  } */
 }
 
 
@@ -740,6 +808,10 @@ RESPONSIVE
   }
   .nav-links{
     font-size: 0.75rem;
+  }
+
+  .searchbar{
+    margin-right: 5px;
   }
 
   .featured-content-wrapper{
@@ -766,10 +838,6 @@ RESPONSIVE
   .stream-list-item-rating, .stream-list-item-cast{
     font-size: 0.75rem;
   }
-
-  .search-input{
-    width: 15rem;
-  }
   
   .price-comparison{
     display: block;
@@ -791,18 +859,6 @@ RESPONSIVE
     margin: 0.3rem;
   }
 
-  .next-arrow{
-    right: 0;
-  }
-
-  .stream-list-item-img{
-    width: 230px;
-  }
-
-  .stream-list-item-title{
-    width: 75%;
-  }
-
   .featured-desc{
     line-height: 1.2rem;
     margin-top: -20px;
@@ -819,7 +875,7 @@ RESPONSIVE
 
   .banner-cta-info, 
   .banner-cta-watch{
-    padding: 0.8rem;
+    padding: 0.7rem;
     height: unset;
     margin-left: 10px;
   }
@@ -827,11 +883,23 @@ RESPONSIVE
   .price-comparison{
     display: block;
   }
+  
+  .next-arrow{
+    right: 0;
+  }
+
+  .stream-list-item-img{
+    width: 230px;
+  }
+
+  .stream-list-item-title{
+    width: 75%;
+  }
 
   .price-column{
     display: block;
-    width: 50%;
-    margin: 50px 25%;
+    width: 60%;
+    margin: 50px 20%;
   }
 
   .footer-content{
@@ -849,6 +917,10 @@ RESPONSIVE
     margin: 0.3rem;
   }
 
+  .featured-info{
+    margin-left: -10px;
+  }
+
   .featured-desc{
     font-size: 0.7rem;
     line-height: 1.2rem;
@@ -863,14 +935,20 @@ RESPONSIVE
     height: unset;
   }
 
+  .fa-search{
+    font-size: 0.9rem;
+    top: 35%;
+    left: 10%;
+  }
+
   .price-comparison{
     display: block;
   }
 
   .price-column{
     display: block;
-    width: 50%;
-    margin: 50px 25%;
+    width: 60%;
+    margin: 50px 20%;
   }
 
   .footer-content{
@@ -881,12 +959,34 @@ RESPONSIVE
 
 @media (min-width:700px) and (max-width: 759px){
   .logo-container img{
-    width: 100px;
+    width: 120px;
   }
 
-  .nav-links, .signup, .login{
-    font-size: 0.6rem;
-    margin:0;
+  .signup, .login{
+    font-size: 0.7rem;
+    margin: 0.3rem;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  .dropdown{
+    display: block;
+    top: 15%;
+  }
+
+  .browse-btn, .dropdown-link{
+    font-size: 0.7rem;
+  }
+
+  .fa-search{
+    font-size: 0.9rem;
+    top: 30%;
+  }
+
+  .featured-info{
+    margin-left: -10px;
   }
 
   .featured-desc{
@@ -917,8 +1017,8 @@ RESPONSIVE
 
   .price-column{
     display: block;
-    width: 50%;
-    margin: 50px 25%;
+    width: 70%;
+    margin: 50px;
   }
 
   .footer-content{
@@ -932,28 +1032,51 @@ RESPONSIVE
     width: 100px;
   }
 
-  .nav-links, .signup, .login{
-    font-size: 0.5rem;
-    margin: 0;
+  .signup, .login{
+    font-size: 0.7rem;
+    margin: 0.3rem;
   }
 
-  .search-input{
-    width: 10rem;
-  } 
+  .nav-links{
+    display: none;
+  }
+
+  .dropdown{
+    display: block;
+    top: 15%;
+  }
+
+  .browse-btn, .dropdown-link{
+    font-size: 0.7rem;
+  }
+
+  .fa-search{
+    font-size: 1rem;
+    top: 30%;
+  }
+
+  .featured-info{
+    margin-left: -10px;
+  }
 
   .featured-desc{
-    font-size: 0.6em;
-    line-height: 1.2rem;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
     margin-top: -20px;
   }
 
   .banner-cta-watch, 
   .banner-cta-info{
     font-size: 0.6rem;
-    padding: 0.8rem;
+    padding: 0.6rem;
     margin-left: 10px;
     height: unset;
   }
+
+  .next-arrow{
+    right: -5px;
+  }
+
   .stream-list-item-img{
     width: 250px;
   }
@@ -968,8 +1091,8 @@ RESPONSIVE
 
   .price-column{
     display: block;
-    width: 50%;
-    margin: 50px 25%;
+    width: 80%;
+    margin: 50px 30px;
   }
 
   .footer-content{
@@ -987,123 +1110,486 @@ RESPONSIVE
     width: 100px;
   }
 
-  .nav-links, .signup, .login{
-    font-size: 0.4rem;
-    margin: 0;
+  .signup, .login{
+    font-size: 0.6rem;
+    margin: 0.3rem;
   }
 
-  .search-input{
-    width: 10rem;
-  } 
+  .nav-links{
+    display: none;
+  }
 
-  .search-btn .fa-search{
-    font-size: 0.8rem
+  .dropdown{
+    display: block;
+    top: 13%;
+  }
+
+  .browse-btn, .dropdown-link{
+    font-size: 0.6rem;
+    margin-left: -10px;
+  }
+
+  .fa-search{
+    font-size: 1rem;
+    top: 30%;
+  }
+
+  .featured-info{
+    margin-left: -10px;
   }
 
   .featured-desc{
     font-size: 0.6em;
-    line-height: 1.2rem;
+    line-height: 0.9rem;
     margin-top: -20px;
   }
 
   .banner-cta-watch, 
   .banner-cta-info{
     font-size: 0.6rem;
-    padding: 0.8rem;
+    padding: 0.5rem;
     margin-left: 10px;
     height: unset;
   }
+
+  .price-comparison{
+    display: block;
+  }
+
+  .price-column{
+    display: block;
+    width: 80%;
+    margin: 50px 30px;
+  }
+
+  .footer-content{
+    margin-left: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .social-media, .social-media i{
+    font-size: 0.9rem;
+  }
 }
 
 
-/* @media (max-width: 500px){
+@media (min-width:450px) and (max-width:529px){
+  .logo-container img{
+    width: 90px;
+  }
+
+  .signup, .login{
+    font-size: 0.5rem;
+    margin: 0.3rem;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  .dropdown{
+    display: block;
+    top: 13%;
+  }
+
+  .browse-btn, .dropdown-link{
+    font-size: 0.5rem;
+    margin-left: -10px;
+  }
+
+  .toggle{
+    width: 150px;
+  }
+
+  .fa-search{
+    font-size: 0.8rem;
+    top: 35%;
+    left: 10px;
+  }
+
+  .featured-title{
+    font-size: 1.1rem;
+  }
+
+  .featured-info{
+    margin-left: -10px;
+  }
+
   .featured-desc{
-    line-height: 1.4em;
+    font-size: 0.5rem;
+    line-height: 0.9rem;
+    margin-top: -20px;
   }
+
+  .banner-cta-watch, 
+  .banner-cta-info{
+    font-size: 0.4rem;
+    padding: 0.5rem;
+    margin-left: 10px;
+    height: unset;
+  }
+
+  .next-arrow{
+    right: -5px;
+  }
+
+  .prev-arrow{
+    left: -5px;
+  }
+
+  .stream-list-container{
+    padding: 5px;
+  }
+
   .stream-list-item-img{
-    width: 280px;
-    height: 350px;
-    margin-left: 50px;
+    width: 180px;
+    height: 250px;
   }
 
-  .stream-list-item-title, 
-  .stream-list-item-rating, 
-  .stream-list-item-cast{
-    left: 13%;
+  .stream-list-item-title{
+    top: 25%;
+    width: 65%;
+    font-size: 0.8rem;
+  }
+
+  .stream-list-item-rating{
+    top: 40%;
+    font-size: 0.7rem;
   }
 
   .stream-list-item-cast{
-    width: 60%;
+    top: 50%;
+    font-size: 0.7rem;
   }
 
   .watch-now-btn{
+    top: 75%;
+  }
+
+  .price-comparison{
+    display: block;
+  }
+
+  .price-column{
+    display: block;
+    width: 80%;
+    margin: 50px 30px;
+  }
+
+  .footer-content{
+    margin: 8rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .social-media, .social-media i{
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width:449px){
+  .logo-container img{
+    width: 70px;
+  }
+
+  .signup, .login{
+    font-size: 0.5rem;
+    margin: 0.3rem;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  .dropdown{
+    display: block;
+    top: 5%;
+  }
+
+  .browse-btn, .dropdown-link{
+    font-size: 0.5rem;
+    margin-left: -10px;
+  }
+
+  .toggle{
+    width: 150px;
+  }
+
+  .search-input{
+    margin-right: 0;
+    height: 1.5rem;
+  }
+
+  .fa-search{
+    font-size: 0.8rem;
+    top: 35%;
+    left: 10px;
+  }
+
+  .featured-content{
+    left: -10px;
+  }
+
+  .featured-title{
+    font-size: 0.8rem;
+  }
+
+  .featured-info{
+    margin-left: -10px;
+  }
+
+  .featured-desc{
+    font-size: 0.45rem;
+    line-height: 0.8rem;
+    margin-top: -20px;
+  }
+
+  .banner-cta-watch, 
+  .banner-cta-info{
+    font-size: 0.4rem;
+    padding: 0.3rem;
+    margin-left: 5px;
+    height: unset;
+  }
+
+  .next-arrow{
+    right: -5px;
+  }
+
+  .prev-arrow{
+    left: -5px;
+  }
+
+  .stream-list-container{
+    padding: 0px;
+  }
+
+  .stream-list-header{
+    font-size: 1.3rem;
+    height: 30px;
+    padding-bottom: 40px;
+  }
+
+  .stream-list-item-img{
+    width: 180px;
+    height: 250px;
+  }
+
+  .stream-list-item-title{
+    top: 25%;
+    width: 65%;
+    font-size: 0.8rem;
+  }
+
+  .stream-list-item-rating{
+    top: 40%;
+    font-size: 0.6rem;
+  }
+
+  .stream-list-item-cast{
+    top: 50%;
+    font-size: 0.6rem;
+  }
+
+  .watch-now-btn{
+    top: 75%;
+  }
+
+  .price-comparison{
+    display: block;
+  }
+
+  .price-column{
+    display: block;
+    width: 80%;
+    margin: 50px 30px;
+  }
+
+  .footer-content{
+    margin: 8rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .social-media, .social-media i{
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width:399px){
+  .logo-container img{
+    width: 70px;
+  }
+
+  .signup, .login{
+    font-size: 0.5rem;
+    margin: 0.3rem;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  .dropdown{
+    display: block;
+    top: 5%;
+  }
+
+  .browse-btn, .dropdown-link{
+    font-size: 0.5rem;
+    margin-left: -10px;
+  }
+
+  .searchbar{
+    margin-right: 5px;
+  }
+
+  .search-input{
+    height: 1.5rem;
+    font-size: 0.5rem;
+  }
+
+  .toggle{
+    width: 120px;
+  }
+
+  .fa-search{
+    font-size: 0.5rem;
+    top: 35%;
     left: 15%;
   }
 
-  .social-media i{
-    font-size: 1rem;
-  }
-  .copyright{
-    width: 40%;
-  }
-  .price-column{
-    margin: 50px;
+  .featured-content{
+    left: -20px;
   }
 
-  .footer-content{
-    margin-left: 1.5rem;
-  }
-}
- */
-@media (max-width: 470px) {
-  .container {
-    height: 100%;
+  .featured-title{
+    font-size: 0.5rem;
   }
 
-  .featured-content-wrapper {
-    top: 10%;
+  .featured-info{
+    margin-left: -10px;
+  }
+
+  .featured-desc{
+    font-size: 0.4rem;
+    line-height: 0.5rem;
+    margin-top: -20px;
+  }
+
+  .banner-cta-watch, 
+  .banner-cta-info{
+    font-size: 0.3rem;
+    padding: 0.2rem;
+    margin-left: 5px;
+    height: unset;
+  }
+
+  .next-arrow{
+    right: -5px;
+  }
+
+  .prev-arrow{
+    left: -5px;
+  }
+
+  .stream-list-container{
+    padding: 0px;
+  }
+
+  .stream-list-header{
+    font-size: 1.3rem;
+    height: 30px;
+    padding-bottom: 40px;
+  }
+
+  .stream-list-item-img{
+    width: 120px;
+    height: 160px;
+  }
+
+  .stream-list-item-title{
+    top: 30%;
+    width: 60%;
+    font-size: 0.5rem;
+  }
+
+  .stream-list-item-rating{
+    top: 40%;
+    font-size: 0.4rem;
+  }
+
+  .stream-list-item-cast{
+    top: 50%;
+    width: 70%;
+    font-size: 0.4rem;
+  }
+
+  .fa-heart{
+    margin-left: 3px;
+  }
+
+  .watch-now-btn{
+    top: 80%;
+    padding: 5px;
+    font-size: 0.5rem;
+    left: 15%;
+  }
+
+  .section-title{
+    font-size: 0.8rem;
   }
   
-  .featured-info {
-    margin: 0 0 1em;
-    font-size: 0.35em;
-    left: -3%;
+  .price-comparison{
+    display: block;
   }
 
-  .featured-desc {
-    line-height: 1.4em;
-    font-size: 0.5em;
+  .price-column{
+    display: block;
+    width: 80%;
+    margin: 50px 30px;
   }
 
-  .banner-cta-watch{
-    left: -10px;
-    height: unset;
+  .plan-name{
+    font-size: 1rem;
+  } 
+  .price{
+    font-size: 1rem;
+  }
+  .per-month{
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
   }
 
-  .banner-cta-info{
-    height: unset;
+  .divider{
+    margin: 1rem 0;
+  }
+
+  .price-feature{
+    font-size: 0.8rem;
+  }
+
+  .plan-cta{
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .footer-logo{
+    width: 6rem;
   }
 
   .footer-content{
-    margin-right: 1rem;
-  }
-}
-
-@media (max-width: 400px){
-  .stream-list-item-img{
-    width: 250px;
-    height: 250px;
-    margin-left: 0px;
+    margin: 5rem 1rem;
+    font-size: 0.6rem;
   }
 
-  .stream-list-item-rating, .stream-list-item-cast{
-    font-size: 0.55rem;
+  .footer-links{
+    line-height: 1rem;
   }
 
-  .footer-content{
-    margin: 8rem 0.8rem;
-  }
   .copyright{
-    width: 100%;
+    font-size: 0.6rem;
+  }
+
+  .social-media, .social-media i{
+    font-size: 0.6rem;
   }
 }
