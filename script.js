@@ -236,10 +236,10 @@ $(function(){
   $('.togglePassword').click(function(){
     $(this).toggleClass('fa-eye-slash');
     var x = $('.password').attr('type'); 
-    if(x == 'password'){
-      $('.password').attr('type', 'text')
+    if(x == 'password'){ 
+      $('.password').attr('type', 'text') 
     }else{
-      $('.password').attr('type', 'password')
+      $('.password').attr('type', 'password') 
     }
   });
 });
