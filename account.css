@@ -83,6 +83,17 @@ input[type="submit"]:hover{
   transition: 0.3s;
 }
 
+.visible-password{
+  position: relative;
+}
+
+.fa-eye{
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  cursor: pointer;
+}
+
 .signin{
   margin: 20px 0;
   text-align: center;
