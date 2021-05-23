@@ -4,9 +4,6 @@ $(document).ready(function(){
     speed: 200,
     fade: true,
     slidesToShow: 1,
-    autoplay: true, 
-    autoplaySpeed: 3500,
-    pauseOnHover: false,
     nextArrow:$('.next'), 
     prevArrow:$('.prev')
   });
@@ -42,25 +39,7 @@ $(document).ready(function(){
       }
     },
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true, 
-          arrow: true
-        }
-      },
-      {
         breakpoint: 900,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      {
-        breakpoint: 800,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1, 
@@ -77,40 +56,6 @@ $(document).ready(function(){
           arrow: true
         }
       },
-       {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      /*{
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2, 
-          infinite: true,
-          arrow: true
-        }
-      }, 
-      {
-        breakpoint: 560,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      } */
     ]
   });
 });
@@ -145,25 +90,7 @@ $(document).ready(function(){
       }
     },
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true, 
-          arrow: true
-        }
-      },
-      {
         breakpoint: 900,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      {
-        breakpoint: 800,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1, 
@@ -180,40 +107,6 @@ $(document).ready(function(){
           arrow: true
         }
       },
-      /* {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2, 
-          infinite: true,
-          arrow: true
-        }
-      }, */
-/*       {
-        breakpoint: 560,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      } */
     ]
   });
 });
@@ -248,25 +141,7 @@ $(document).ready(function(){
       }
     },
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true, 
-          arrow: true
-        }
-      },
-      {
         breakpoint: 900,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      {
-        breakpoint: 800,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1, 
@@ -283,40 +158,6 @@ $(document).ready(function(){
           arrow: true
         }
       },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2, 
-          infinite: true,
-          arrow: true
-        }
-      },
-/*       {
-        breakpoint: 560,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      } */
     ]
   });
 });
@@ -351,25 +192,7 @@ $(document).ready(function(){
       }
     },
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true, 
-          arrow: true
-        }
-      },
-      {
         breakpoint: 900,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      {
-        breakpoint: 800,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1, 
@@ -386,53 +209,23 @@ $(document).ready(function(){
           arrow: true
         }
       },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2, 
-          infinite: true,
-          arrow: true
-        }
-      },
-/*       {
-        breakpoint: 560,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1, 
-          infinite: true,
-          arrow: true
-        }
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      } */
     ]
   });
 });
 
-
+//Fill heart when clicked
 $(document).on('click', '.filled',function(){
   $(this).toggleClass('fill-heart')
-})
+});
 
-/* $('.search-input').focus(function() {
-  $(this).attr('placeholder', 'Movies, Tv Shows, Anime')
-}).blur(function() {
-  $(this).attr('placeholder', 'Search')
-}) */
+// Expand and Collapse searchbar when search icon is clicked 
+$('.fa-search').click(function(){
+  $('.search-input').toggleClass('toggle')
+});
 
-/* window.onbeforeunload = function () { window.scrollTo(0,0); }; */
+//Collapse searchbar when clicked away
+$(document).click(function(e){
+  if(!$(e.target).parent('.searchbar').length){
+    $('.searchbar').find('.search-input').removeClass('toggle');
+  }
+});
