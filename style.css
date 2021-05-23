@@ -291,7 +291,6 @@ nav{
   align-items: center;
   margin: 0 0 1.5rem;
   font-size: 1.1vw;
-  /* transform: translateX(-50px); */
 }
 
 .featured-info span{
@@ -789,18 +788,6 @@ nav{
   .stream-list-item-title{
     width: 70%;
   }
-/*   .browse-btn{
-    display: inline;
-  }
-  .nav-link{
-    position: absolute;
-    flex-direction: column;
-    opacity: 0;
-  }
-  .nav-link:hover{
-    opacity: 1;
-    transition: all 1s;
-  } */
 }
 
 
