@@ -235,7 +235,7 @@ $(document).click(function(event){
 $(function(){
   $('.togglePassword').click(function(){
     $(this).toggleClass('fa-eye-slash');
-    var x = $('#password').attr('type'); 
+    var x = $('.password').attr('type'); 
     if(x == 'password'){
       $('.password').attr('type', 'text')
     }else{

@@ -115,6 +115,7 @@ input[type="submit"]:hover{
 
 .terms input[type="checkbox"]{
   margin-right: 10px;
+  box-shadow: 0.1rem 0.1rem 0rem silver;
 }
 
 .terms a{
@@ -169,6 +170,7 @@ form .input-field{
 
 .remember input[type="checkbox"]{
   margin-right: 10px;
+  box-shadow: 0.1rem 0.1rem 0rem silver;
 }
 
 .forgot-pw{
