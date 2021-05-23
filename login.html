@@ -5,14 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign In</title>
+  <!-- FONT AWESOME -->
   <script src="https://kit.fontawesome.com/202f365526.js" crossorigin="anonymous"></script>
-    <!-- WEBSITE ICON -->
-    <link rel="icon" href="img/icon.png" type="image/icon type">
+  <!-- WEBSITE ICON -->
+  <link rel="icon" href="img/icon.png" type="image/icon type">
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
   <!-- STYLE CSS -->
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="account.css">
 </head>
 <body>
 
@@ -28,12 +29,13 @@
       <div class="input-field">
         <input type="text" placeholder="Username or Email" required>
       </div>
-      <div class="input-field">
-        <input type="password" placeholder="Password" required>
+      <div class="input-field visible-password">
+        <input class="password" type="password" placeholder="Password" required>
+        <i class="fas fa-eye fa-lg togglePassword"></i>
       </div>
       <div class="remember">
         <input type="checkbox" required>
-        <span>Remember me</span>
+        <span>Remember Me</span>
       </div>
       <div class="forgot-pw">
         Forgot Password?
@@ -45,5 +47,8 @@
     </form>
   </div>
 
+  <!-- SCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
