@@ -29,9 +29,6 @@ header{
   background-image: linear-gradient(to bottom,rgb(60, 57, 57), rgb(1, 1, 1));
 }
 
-button {
-  padding: 0.2em 0.5em;
-}
 
 /*-----------------NAVBAR---------------------*/
 
@@ -51,6 +48,7 @@ button {
   z-index: 0;
 }
 
+/*---- NAVIGATION LINKS ----*/
 nav{
   flex:2;
   text-align: center;
@@ -247,7 +245,7 @@ nav{
 .featured-img{
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   opacity: 0.5;
 }
 
@@ -332,15 +330,16 @@ nav{
   cursor: pointer;
   margin: 20px;
   max-width: 80%;
-  height: 50px;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
   color: #fafafa;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   border: none;
   outline: none;
+  padding: 15px;
 }
 
 .banner-cta-watch{
@@ -512,12 +511,12 @@ nav{
 }
 
 .fa-heart:hover{
-  color: var(--main-color);
+  color: #e44d4d;
 }
 
 .fill-heart{
   font-weight: 700;
-  color: var(--main-color);
+  color: #e44d4d;
 }
 
 /*-----Stream List Buttons-----*/
@@ -525,10 +524,13 @@ nav{
 .watch-now-btn{
   position: absolute;
   border: none;
+  text-decoration:none;
   border-color: #fafafa;
   border-radius: 20px;
   padding: 10px;
+  background: white;
   color: black;
+  font-size: 0.8rem;
   top: 85%;
   left: 25%;
   cursor: pointer;
@@ -1201,6 +1203,11 @@ nav{
     width: 150px;
   }
 
+  .search-input{
+    height: 1.5rem;
+    font-size: 0.5rem;
+  }
+
   .fa-search{
     font-size: 0.8rem;
     top: 35%;
@@ -1315,8 +1322,8 @@ nav{
   }
 
   .search-input{
-    margin-right: 0;
     height: 1.5rem;
+    font-size: 0.5rem;
   }
 
   .fa-search{
