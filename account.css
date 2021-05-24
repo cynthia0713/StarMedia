@@ -35,7 +35,7 @@ header{
   transform: translate(-50%, -50%);
   max-width: 100%;
   background: #fafafa;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 30px 60px;
   box-shadow: 0 0 0.8rem rgb(29, 28, 28);
 }
@@ -51,7 +51,7 @@ form{
 
 form .input-field{
   border: 2px solid silver;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px;
   margin: 20px 0;
 }
@@ -138,7 +138,7 @@ input[type="submit"]:hover{
   transform: translate(-50%, -50%);
   max-width: 100%;
   background: #fafafa;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 30px;
   box-shadow: 0 0 0.8rem rgb(29, 28, 28);
 }
