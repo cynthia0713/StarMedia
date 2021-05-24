@@ -14,9 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
   <!-- STYLE CSS -->
   <link rel="stylesheet" href="account.css">
-  <!-- JS -->
-  <script type="text/javascript" src="script.js"></script>
 </head>
+
 <body>
 
   <header>
@@ -25,7 +24,7 @@
      </div>
   </header>
 
-  <div class="signup">
+  <div class="container">
     <h1>Sign Up</h1>
     <form action="#" method="post">
       <div class="input-field">
@@ -38,19 +37,20 @@
         <input class="password" type="password" placeholder="Password" required>
         <i class="fas fa-eye fa-lg togglePassword"></i>
       </div>
-      <div class="terms">
+      <div class="checkbox">
         <input type="checkbox" required>
-        <span>I read and agree to <a href="#">Terms & Conditions</a></span> 
+        <label>I read and agree to <a href="#" id="terms">Terms & Conditions</a></label> 
       </div>
-      <input type="submit" value="Join Now">
-      <div class="signin">
+      <button type="submit">Join Now!</button>
+      <div class="switch-link">
         Have an account? <a href="login.html">Sign In</a> 
       </div>
     </form>
   </div>
-
-  <!-- SCRIPT -->
+  <!-- JS SCRIPT -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+  </script>
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

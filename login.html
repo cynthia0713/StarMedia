@@ -15,6 +15,7 @@
   <!-- STYLE CSS -->
   <link rel="stylesheet" href="account.css">
 </head>
+
 <body>
 
   <header>
@@ -23,7 +24,7 @@
      </div>
   </header>
 
-  <div class="login">
+  <div class="container">
     <h1>Welcome Back!</h1>
     <form action="#" method="post">
       <div class="input-field">
@@ -33,22 +34,25 @@
         <input class="password" type="password" placeholder="Password" required>
         <i class="fas fa-eye fa-lg togglePassword"></i>
       </div>
-      <div class="remember">
+      <div class="checkbox">
         <input type="checkbox" required>
-        <span>Remember Me</span>
+        <label>Keep me logged in</label>
       </div>
       <div class="forgot-pw">
         Forgot Password?
       </div>
-      <input type="submit" value="Login">
-      <div class="signup-link">
+      <button type="submit">Login</button>
+      <div class="switch-link">
         Don't have an account? <a href="register.html">Join us now!</a> 
       </div>
     </form>
   </div>
 
-  <!-- SCRIPT -->
+  <!-- JS SCRIPT -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+  </script>
   <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
