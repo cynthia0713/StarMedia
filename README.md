@@ -4,4 +4,4 @@
 A static online streaming website created with HTML, CSS and Javascript
 
 
-### <a href="https://agitated-jackson-fd0907.netlify.app/"> LIVE DEMO </a>
+### <a href="https://star-media.netlify.com/"> LIVE DEMO </a>
