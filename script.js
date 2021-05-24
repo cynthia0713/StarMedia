@@ -233,7 +233,7 @@ $(document).click(function(event){
 
 //Toggle between password visibility
 $(function(){
-  $('.togglePassword').click(function(){
+  $('.togglePassword').click(function(e){
     $(this).toggleClass('fa-eye-slash');
     var x = $('.password').attr('type'); 
     if(x == 'password'){ 
